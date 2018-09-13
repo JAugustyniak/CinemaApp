@@ -32,6 +32,7 @@
                             <form:input path="age" class="form-control" id="age"
                                         placeholder="Age"/>
                         </div>
+                        <form:hidden path="id" value="${movie.id}" />
                         <input type="submit" value="Save" class="btn btn-primary">
                     </form:form>
                 </div>
