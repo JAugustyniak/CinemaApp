@@ -65,7 +65,7 @@
                         <td><a href="/movie/${seance.movie.id}">${seance.movie.title}</a></td>
                         <td><fmt:formatDate value="${seance.date}" pattern="yyyy-MM-dd HH:mm"/></td>
                         <td>${seance.cinemaHall.name}</td>
-                        <td><a href="/reservation/add?seanceId=${seance.id}">Reservation</a></td>
+                        <td><a href="/reservation/new?seanceId=${seance.id}">Reservation</a></td>
                     </tr>
                 </c:forEach>
                 </tbody>

@@ -14,8 +14,4 @@ public class WebAppConfig extends WebMvcConfigurerAdapter {
         registry.addViewController("/logout").setViewName("logout");
     }
 
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
-    }
 }

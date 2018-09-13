@@ -5,7 +5,7 @@
             <div class="col-7 col-lg-offset-1">
                 <h3>Wybierz miejsca</h3>
                 <%--@elvariable id="reservation" type="pl.coderslab.entity.Reservation"--%>
-                <form:form modelAttribute="reservation" method="post" action="/reservation/add">
+                <form:form modelAttribute="reservation" method="post" action="/reservation/new">
                     <div class="row">
                         <form:errors path="*"/>
                         <c:forEach items="${seats}" var="seat">

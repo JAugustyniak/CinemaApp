@@ -32,7 +32,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/*/delete/**").hasRole("ADMIN")
                 .antMatchers("/*/edit/**").hasRole("ADMIN")
                 .antMatchers("/hall/**").hasRole("ADMIN")
-                .antMatchers("/movie").hasRole("ADMIN")
+                .antMatchers("/movie/**").hasRole("ADMIN")
                 .antMatchers("/reservation/list/**").hasRole("ADMIN")
                 .anyRequest().permitAll()
                 .and().formLogin().loginPage("/login").defaultSuccessUrl("/")

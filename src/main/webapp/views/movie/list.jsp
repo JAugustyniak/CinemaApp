@@ -14,7 +14,7 @@
                         <th scope="col">Age</th>
                         <th scope="col">Length</th>
                         <th scope="col">Details</th>
-                        <th scope="col">Edit</th>
+                        <th scope="col">Action</th>
                     </tr>
                     </thead>
                     <tbody>

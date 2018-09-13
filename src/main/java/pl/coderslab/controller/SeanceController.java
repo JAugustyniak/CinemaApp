@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import pl.coderslab.entity.CinemaHall;
 import pl.coderslab.entity.Seance;
 import pl.coderslab.entity.Seat;
 import pl.coderslab.service.CinemaHallService;
@@ -87,4 +88,22 @@ public class SeanceController {
         model.addAttribute("cinemaHalls", cinemaHallService.findAll());
         model.addAttribute("movies", movieService.findAll());
     }
+
+    @GetMapping("/edit/{id}")
+    public String edit(@PathVariable int id, Model model) {
+        model.addAttribute("seance", seanceService.findOne(id));
+
+        return "seance/edit";
+    }
+
+    @PostMapping("/edit")
+    public String edit(@Valid Seance seance, BindingResult result) {
+        if(result.hasErrors()) {
+            return "seance/edit";
+        }
+        seanceService.save(seance);
+
+        return "redirect:/seance";
+    }
+
 }
