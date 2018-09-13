@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import pl.coderslab.entity.CinemaHall;
 import pl.coderslab.entity.Movie;
 import pl.coderslab.service.MovieService;
 
@@ -52,5 +53,22 @@ public class MovieController {
         model.addAttribute("movie", movieService.findById(id));
 
         return "movie/details";
+    }
+
+    @GetMapping("/edit/{id}")
+    public String edit(@PathVariable int id, Model model) {
+        model.addAttribute("movie", movieService.findOne(id));
+
+        return "movie/edit";
+    }
+
+    @PostMapping("/edit")
+    public String edit(@Valid Movie movie, BindingResult result) {
+        if (result.hasErrors()) {
+            return "movie/edit";
+        }
+        movieService.save(movie);
+
+        return "redirect:/movie";
     }
 }
