@@ -1,0 +1,16 @@
+.seat { float : left; height: 25px; width: 25px; background : #ddd; margin: 2px; color: #fff }
+
+/* Coloring based on availability */
+.seat.available { background: green; cursor: pointer; }
+.seat.not-available { background: red; }
+.seat.selected { background: orange; }
+
+.main-content {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.entry-content {
+    flex: 1
+}
