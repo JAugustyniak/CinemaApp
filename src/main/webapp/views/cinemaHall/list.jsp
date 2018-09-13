@@ -10,7 +10,7 @@
                         <th scope="col">Name</th>
                         <th scope="col">Number of seats</th>
                         <th scope="col">Edit</th>
-                        <th scope="col">Delete</th>
+                       <%-- <th scope="col">Delete</th>--%>
                     </tr>
                     </thead>
                     <tbody>
@@ -18,8 +18,8 @@
                         <tr>
                             <td>${cinemaHall.name}</td>
                             <td>${cinemaHall.numberOfRows * cinemaHall.seatsInRow}</td>
-                            <td><a class="confirm btn btn-success" href="/hall/edit/${cinemaHall.id}">Edit</a></td>
-                            <td><a class="confirm btn btn-success" href="/hall/delete/${cinemaHall.id}">Delete</a></td>
+                            <td><a class="confirm btn btn-warning" href="/hall/edit/${cinemaHall.id}">Edit</a></td>
+                        <%--<td><a class="confirm btn btn-warning" href="/hall/delete/${cinemaHall.id}">Delete</a></td>--%>
                         </tr>
                     </c:forEach>
                     </tbody>

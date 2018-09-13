@@ -1,9 +1,9 @@
 .seat { float : left; height: 25px; width: 25px; background : #ddd; margin: 2px; color: #fff }
 
-/* Coloring based on availability */
 .seat.available { background: green; cursor: pointer; }
 .seat.not-available { background: red; }
 .seat.selected { background: orange; }
+
 
 .main-content {
     display: flex;
@@ -14,3 +14,34 @@
 .entry-content {
     flex: 1
 }
+
+.dropbtn {
+    background-color: white;
+    color: #84878d;
+    padding: 16px;
+    font-size: 14px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+.dropdown-content a {
+    font-size: 14px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;}

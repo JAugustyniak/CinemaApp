@@ -3,7 +3,7 @@ $(function () {
         $(this).toggleClass('selected');
     });
 
-    $("#reservation-button").click(function () {
+    $("#reservation-button").click(function (e) {
         var selected = $(".seat.selected").map(function () {
             return $(this).data('seat-id');
         }).get();

@@ -13,7 +13,8 @@
                         <th scope="col">Category</th>
                         <th scope="col">Age</th>
                         <th scope="col">Length</th>
-                        <th scope="col"></th>
+                        <th scope="col">Details</th>
+                        <th scope="col">Edit</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -25,6 +26,7 @@
                             <td>${movie.age}</td>
                             <td>${movie.length}</td>
                             <td><a href="/movie/${movie.id}">Details</a></td>
+                            <td><a class="confirm btn btn-warning" href="/movie/edit/${movie.id}">Edit</a></td>
                         </tr>
                     </c:forEach>
                     </tbody>

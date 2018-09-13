@@ -1988,11 +1988,26 @@ ul.arrow li a:hover {
     border-right: 1px solid #eeeeef;
 }
 
+.main-navigation .menu-item-drop a {
+    margin-top: 10px;
+    display: block;
+    color: #84878d;
+    font-size: 14px;
+    font-size: 0.9333333333em;
+    font-weight: 400;
+    line-height: 1;
+    border-bottom: 1px solid #eeeeef;
+    border-right: none;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
 .main-navigation .menu-item.current-menu-item, .main-navigation .menu-item:hover {
     position: relative;
 }
 
-.main-navigation .menu-item.current-menu-item:after, .main-navigation .menu-item:hover:after {
+.main-navigation .menu-item.current-menu-item:after, .main-navigation .menu-item-drop.current-menu-item-drop:after, .main-navigation .menu-item:hover:after {
     content: " ";
     position: absolute;
     width: 80%;
