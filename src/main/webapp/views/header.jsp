@@ -24,7 +24,7 @@
                 <img src="/resources/images/logo.png" alt="" class="logo">
                 <div class="logo-copy">
                     <h1 class="site-title">AsiaCinema</h1>
-                    <small class="site-description">Best cinema in the world</small>
+                    <small class="site-description">The best cinema in the world</small>
                 </div>
             </a>
             <div class="main-navigation">
