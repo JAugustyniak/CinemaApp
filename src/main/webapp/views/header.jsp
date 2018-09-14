@@ -35,13 +35,13 @@
                         <li class="menu-item"><a href="/seance">Seance</a></li>
                     </sec:authorize>
                     <sec:authorize access="isAuthenticated()">
-                    <div class="dropdown">
-                        <button class="dropbtn">Seance</button>
-                        <div class="dropdown-content">
-                            <li class="menu-item-drop"><a href="/seance/add">Add</a></li>
-                            <li class="menu-item-drop"><a href="/seance">List</a></li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Seance</button>
+                            <div class="dropdown-content">
+                                <li class="menu-item-drop"><a href="/seance/add">Add</a></li>
+                                <li class="menu-item-drop"><a href="/seance">List</a></li>
+                            </div>
                         </div>
-                    </div>
                     </sec:authorize>
                     <sec:authorize access="isAnonymous()">
                         <li class="menu-item"><a href="/login">Login</a></li>
@@ -61,8 +61,10 @@
                                 <li class="menu-item-drop"><a href="/hall">List</a></li>
                             </div>
                         </div>
+                        <li class="menu-item current-menu-item"><a href="/reservation/list">Reservations</a></li>
                         <li class="menu-item"><a href="/logout">Logout</a></li>
                     </sec:authorize>
+
                 </ul>
             </div>
             <div class="mobile-navigation"></div>
