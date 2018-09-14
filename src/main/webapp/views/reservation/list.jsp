@@ -9,7 +9,7 @@
                     <tr>
                         <th scope="col">Seance</th>
                         <th scope="col">Number of reserved seats</th>
-                        <th scope="col"></th>
+                        <th scope="col">Action</th>
                     </tr>
                     </thead>
                     <tbody>
